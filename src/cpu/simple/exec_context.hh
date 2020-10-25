@@ -159,6 +159,9 @@ class SimpleExecContext : public ExecContext {
     Stats::Scalar numBranchMispred;
     /// @}
 
+    /** Stat for percentage of branches mispredicted */
+    Stats::Formula pctBranchMispred;
+
    // Instruction mix histogram by OpClass
    Stats::Vector statExecutedInstType;
 

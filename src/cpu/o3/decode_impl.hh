@@ -131,6 +131,7 @@ DefaultDecode<Impl>::DecodeStats::DecodeStats(O3CPU *cpu)
           " branch"),
       ADD_STAT(branchMispred, "Number of times decode detected a branch"
           " misprediction"),
+      ADD_STAT(branchMispredPercent, "Percentage decode detected a branch misprediction"),
       ADD_STAT(controlMispred,"Number of times decode detected an"
           " instruction incorrectly predicted as a control"),
       ADD_STAT(decodedInsts, "Number of instructions handled by decode"),

@@ -309,6 +309,8 @@ class DefaultDecode
         Stats::Scalar branchResolved;
         /** Stat for number of times a branch mispredict is detected. */
         Stats::Scalar branchMispred;
+        /** Stat for percentage of branches mispredicted */
+        Stats::Formula branchMispredPercent;
         /** Stat for number of times decode detected a non-control instruction
          * incorrectly predicted as a branch.
          */
